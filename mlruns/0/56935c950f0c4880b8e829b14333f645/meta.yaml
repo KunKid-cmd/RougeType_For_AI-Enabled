@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kanisornkanokratana/Desktop/FinalExam_AIE/mlruns/0/56935c950f0c4880b8e829b14333f645/artifacts
+end_time: 1746973274364
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 56935c950f0c4880b8e829b14333f645
+run_name: wise-dolphin-802
+run_uuid: 56935c950f0c4880b8e829b14333f645
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746973272273
+status: 3
+tags: []
+user_id: kanisornkanokratana
