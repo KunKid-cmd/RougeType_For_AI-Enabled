@@ -62,7 +62,7 @@ pip install -r requirement.txt
 
 4. **Run the Model API Server**
 
-For Unity Integration:
+For API Testing:
 ```bash
 uvicorn Model_api_for_testing:app --reload --port 5050
 ```
@@ -70,7 +70,7 @@ uvicorn Model_api_for_testing:app --reload --port 5050
 The server will run at `http://127.0.0.1:5050`
 Open /docs to interact with the API via Swagger UI.
 
-For API Integration With:
+For API Integration With Unity:
 
 ```bash
 python Model_api_for_Unity.py
