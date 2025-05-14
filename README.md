@@ -1,5 +1,10 @@
 # RougeType_For_AI-Enabled
 ---
+## Team member
+1) Kanisorn Kanokratana 6510545284
+2) Achirawich Phongpanich 6510545781
+
+---
 This project is developed for the Software Engineering for AI-Enabled Systems course. It integrates a logistic regression model into a Unity-based typing defense game, adapting the difficulty in real time based on player performance.
 
 ---
@@ -27,7 +32,7 @@ The model is hosted via a API and responds to Unity's real-time requests.
 
 - <strong>Model_Versioning_Mlflow.py</strong>: Handles model tracking and version control using MLflow.
 
-- <strong>Model_Explainability&Reasoning.ipynb</strong>: Notebook that explains model predictions using SHAP visualizations.
+- <strong>Model_Explainability_And_Reasoning.ipynb</strong>: Notebook that explains model predictions using SHAP visualizations.
 
 - <strong>player_performance_log.csv</strong>: Dataset file used to train and validate the model.
 
