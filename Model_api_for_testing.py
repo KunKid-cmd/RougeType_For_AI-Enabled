@@ -20,4 +20,4 @@ def predict(data: InputData):
     features = np.array([[data.wpm, data.combo_length, data.mistake_count, data.recent_accuracy, data.wave_number]])
     features_scaled = scaler.transform(features)
     prediction = model.predict(features_scaled)[0]
-    return {"predicted_difficulty": int(prediction)}
+    return {"prediction": int(prediction)}

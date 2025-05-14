@@ -14,11 +14,11 @@ def predict():
         data = request.get_json()
 
         features = pd.DataFrame([{
-            "wpm": data["wpm"],
-            "combo_length": data["combo_length"],
-            "mistake_count": data["mistake_count"],
-            "recent_accuracy": data["recent_accuracy"],
-            "wave_number": data["wave_number"]
+            "wpm": float(data["wpm"]),
+            "combo_length": int(data["combo_length"]),
+            "mistake_count": int(data["mistake_count"]),
+            "recent_accuracy": float(data["recent_accuracy"]),
+            "wave_number": int(data["wave_number"])
         }])
 
         scaled = scaler.transform(features)
