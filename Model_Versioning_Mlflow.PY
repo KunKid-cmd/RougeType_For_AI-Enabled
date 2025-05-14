@@ -23,19 +23,13 @@ with mlflow.start_run():
 
     # third run
     model = LogisticRegression(multi_class="multinomial", max_iter=2000, C=0.3)
-    # model = DecisionTreeClassifier(max_depth=5, random_state=42)
 
     model.fit(X_train, y_train)
     acc = model.score(X_val, y_val)
 
     # Log to MLflow
-    # first and second run
     mlflow.log_param("model_type", "LogisticRegression")
     mlflow.log_param("features", "wpm, combo_length, mistake_count, recent_accuracy, wave_number")
-
-    # third run
-    # mlflow.log_param("model_type", "DecisionTreeClassifier")
-    # mlflow.log_param("max_depth", 5)
 
     mlflow.log_metric("validation_accuracy", acc)
     mlflow.sklearn.log_model(model, "model")
